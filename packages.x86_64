@@ -20,6 +20,7 @@ exfat-utils
 f2fs-tools
 fish
 fsarchiver
+git
 gnu-netcat
 gpm
 gptfdisk
