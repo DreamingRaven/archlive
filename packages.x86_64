@@ -18,6 +18,7 @@ elinks
 ethtool
 exfat-utils
 f2fs-tools
+fish
 fsarchiver
 gnu-netcat
 gpm
@@ -42,6 +43,7 @@ mdadm
 mtools
 nano
 ndisc6
+neovim
 netctl
 nfs-utils
 nilfs-utils
@@ -60,6 +62,7 @@ refind-efi
 reiserfsprogs
 rp-pppoe
 rsync
+rxvt-unicode
 sdparm
 sg3_utils
 smartmontools
