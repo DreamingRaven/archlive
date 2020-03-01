@@ -3,7 +3,7 @@
 # @Author: GeorgeRaven <archer>
 # @Date:   2020-02-29T21:27:15+00:00
 # @Last modified by:   archer
-# @Last modified time: 2020-03-01T01:41:56+00:00
+# @Last modified time: 2020-03-01T12:04:45+00:00
 # @License: please see LICENSE file in project root
 
 set -e -u
@@ -44,4 +44,3 @@ cd /home/${user_name}/
 git init .
 git remote add -t \* -f origin https://github.com/DreamingRaven/.files
 git checkout master
-pacman --noconfirm -S - < /home/${user_name}/requirements
