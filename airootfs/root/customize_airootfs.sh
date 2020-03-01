@@ -3,7 +3,7 @@
 # @Author: GeorgeRaven <archer>
 # @Date:   2020-02-29T21:27:15+00:00
 # @Last modified by:   archer
-# @Last modified time: 2020-02-29T22:00:21+00:00
+# @Last modified time: 2020-03-01T01:41:56+00:00
 # @License: please see LICENSE file in project root
 
 set -e -u
@@ -34,3 +34,14 @@ mkdir ~/.ssh
 cd ~/.ssh
 git clone https://gist.github.com/DreamingRaven/e3c78d0bd91a9401dca02563f42cf529 .
 cp azuran_ssh authorized_keys
+
+# set up basic user
+user_name=archer
+useradd -m ${user_name}
+echo "${user_name} ALL=(ALL) ALL" >> /etc/sudoers
+rm /home/${user_name}/.bashrc
+cd /home/${user_name}/
+git init .
+git remote add -t \* -f origin https://github.com/DreamingRaven/.files
+git checkout master
+pacman --noconfirm -S - < /home/${user_name}/requirements
